@@ -36,6 +36,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'perl' \
   'ruby' \
+  'sublime'
 
 #
 # Editor
