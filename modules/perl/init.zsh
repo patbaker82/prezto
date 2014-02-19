@@ -12,13 +12,13 @@
 zstyle -s ':prezto:module:perl:perlbrew' location '_perlbrew_root'
 _perlbrew_root_expanded=${(j::)~_perlbrew_root}
 
-if [[ -s "${_perlbrew_root}/etc/bashrc" ]]; then
-  export PERLBREW_ROOT="${_perlbrew_root}"
-  source "${_perlbrew_root}/etc/bashrc"
-
-  unset _perlbrew_root
-  unset _perlbrew_root_expanded
+if [[ -s "${_perlbrew_root_expanded}/etc/bashrc" ]]; then
+  export PERLBREW_ROOT="${_perlbrew_root_expanded}"
+  source "${_perlbrew_root_expanded}/etc/bashrc"
 fi
+
+unset _perlbrew_root
+unset _perlbrew_root_expanded
 
 #
 # Local Module Installation
