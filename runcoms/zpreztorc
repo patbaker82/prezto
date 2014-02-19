@@ -161,4 +161,4 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 #
 # Perl
 #
-zstyle ':prezto:module:perl:perlbrew' location '/Users/pbaker/.perlbrew'
+zstyle ':prezto:module:perl:perlbrew' location '~/.perlbrew'
