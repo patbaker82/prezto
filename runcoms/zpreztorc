@@ -37,7 +37,8 @@ zstyle ':prezto:load' pmodule \
   'perl' \
   'ruby' \
   'sublime' \
-  'homebrew'
+  'homebrew' \
+  'mongodb'
 
 #
 # Editor

@@ -1,5 +1,5 @@
 #
-# Enable MongoDB·
+# Enable MongoDB
 #
 # Authors:
 #   Patrick Baker <patricksbaker@gmail.com>
@@ -11,6 +11,6 @@ local mongo_log='/usr/local/var/log/mongodb/mongo.log'
 
 if [[ "$OSTYPE" == darwin* ]]; then
     alias mongod-start="${mongod_path} --config /usr/local/etc/mongod.conf --fork"
-    alias mongod-stop='kill -15 `cat $mongod_pid`'
+    alias mongod-stop="cat ${mongod_pid}|xargs kill -15"
     alias mongo-log="tail -f ${mongo_log}"
 fi
