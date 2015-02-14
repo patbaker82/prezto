@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'ruby' \
   'sublime' \
   'homebrew' \
-  'mongodb'
+  'mongodb' \
+  'nvm'
 
 #
 # Editor
