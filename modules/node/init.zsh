@@ -6,6 +6,15 @@
 #   Zeh Rizzatti <zehrizzatti@gmail.com>
 #
 
+# Get nvm location
+zstyle -s ':prezto:module:node:nvm' location '_nvm_root'
+_nvm_root_expanded=${(j::)~_nvm_root}
+export NVM_DIR="${_nvm_root_expanded}"
+
+if [[ ! -d "${_nvm_root_expanded}" ]]; then
+  mkdir ${_nvm_root_expanded}
+fi
+
 # Load manually installed NVM into the shell session.
 if [[ -s "$HOME/.nvm/nvm.sh" ]]; then
   source "$HOME/.nvm/nvm.sh"

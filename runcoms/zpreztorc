@@ -33,20 +33,22 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
+  'archive' \
+  'syntax-highlighting' \
   'git' \
   'perl' \
-  'ruby' \
   'sublime' \
   'homebrew' \
   'mongodb' \
-  'node'
+  'node' \
+  'golang'
 
 #
 # Editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'no'
@@ -116,7 +118,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Set the SSH identities to load into the agent.
-zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 #
 # Syntax Highlighting
@@ -132,10 +134,10 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
    'root'
 
 # Set syntax highlighting styles.
-zstyle ':prezto:module:syntax-highlighting' styles \
-   'builtin' 'bg=blue' \
-   'command' 'bg=blue' \
-   'function' 'bg=blue'
+#zstyle ':prezto:module:syntax-highlighting' styles \
+#   'builtin' 'bg=blue' \
+#   'command' 'bg=blue' \
+#   'function' 'bg=blue'
 
 #
 # Terminal
@@ -165,5 +167,12 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 #
 zstyle ':prezto:module:perl:perlbrew' location '~/.perlbrew'
 
-# Integrate with iTerm2.
-zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+#
+# Node
+#
+zstyle ':prezto:module:node:nvm' location '~/.nvm'
+
+#
+# GoLang
+#
+zstyle ':prezto:module:golang:gopath' location '~/GoLang'
