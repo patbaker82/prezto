@@ -183,4 +183,4 @@ zstyle ':prezto:module:node:nvm' location '~/.nvm'
 #
 # GoLang
 #
-zstyle ':prezto:module:golang:gopath' location '~/GoLang'
+zstyle ':prezto:module:golang:gopath' location '~/Projects/GoLang'
