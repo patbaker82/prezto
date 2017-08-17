@@ -34,3 +34,7 @@
 	path = modules/prompt/external/async
 	url = https://github.com/mafredri/zsh-async.git
 	ignore = dirty
+[submodule "modules/prompt/external/agnoster-zsh-theme"]
+	path = modules/prompt/external/agnoster-zsh-theme
+	url = https://github.com/agnoster/agnoster-zsh-theme.git
+	branch = master
