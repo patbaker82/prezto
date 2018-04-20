@@ -43,7 +43,11 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'mongodb' \
   'node' \
-  'golang'
+  'golang' \
+  'osx' \
+  'spectrum' \
+  'docker' \
+  'command-not-found'
 
 #
 # Autosuggestions
